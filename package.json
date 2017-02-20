@@ -4,6 +4,9 @@
   "description": "test project",
   "main": "index.js",
   "scripts": {
+    "build": "webpack",
+    "start": "webpack ./src/index.js ./public/bundle.js",
+    "lint": "eslint ./src",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -19,5 +22,13 @@
   "bugs": {
     "url": "https://github.com/akim157/test/issues"
   },
-  "homepage": "https://github.com/akim157/test#readme"
+  "homepage": "https://github.com/akim157/test#readme",
+  "dependencies": {
+    "jquery": "^3.1.1",
+    "webpack": "^2.2.1"
+  },
+  "devDependencies": {
+    "eslint": "^3.15.0",
+    "webpack": "^2.2.1"
+  }
 }
